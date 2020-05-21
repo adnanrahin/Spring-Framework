@@ -22,8 +22,8 @@ public class Main {
         System.out.println(trackCoach.getDailyFortune());
 
 
-        CricketCoach cricketCoach = context.getBean("cricketCoach", CricketCoach.class);
 
+        CricketCoach cricketCoach = context.getBean("cricketCoach", CricketCoach.class);
 
         System.out.println(cricketCoach.getDailyWorkout());
 
