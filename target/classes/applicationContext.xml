@@ -10,6 +10,11 @@
         <constructor-arg ref="fortune"/>
     </bean>
 
+    <bean id="trackCoach"
+          class="com.spring.core.containers.TrackCoach">
+        <constructor-arg ref="fortune"/>
+    </bean>
+
     <bean id="fortune"
           class="com.spring.core.containers.HappyFortuneService">
     </bean>

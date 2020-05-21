@@ -14,6 +14,13 @@ public class Main {
 
         System.out.println(theCoach.getDailyFortune());
 
+
+        TrackCoach trackCoach = context.getBean("trackCoach", TrackCoach.class);
+
+        System.out.println(trackCoach.getDailyWorkout());
+
+        System.out.println(trackCoach.getDailyFortune());
+
     }
 
 }
