@@ -5,5 +5,13 @@
 
     <bean id="baseballCoach"
           class="com.spring.core.containers.BaseballCoach">
+
+        <!--Constructor Injection-->
+        <constructor-arg ref="fortune"/>
     </bean>
+
+    <bean id="fortune"
+          class="com.spring.core.containers.HappyFortuneService">
+    </bean>
+
 </beans>

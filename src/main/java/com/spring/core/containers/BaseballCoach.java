@@ -1,6 +1,13 @@
 package com.spring.core.containers;
 
 public class BaseballCoach implements Coach {
+
+    private FortuneService fortuneService;
+
+    public BaseballCoach(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
+    }
+
     @Override
     public String getDailyWorkout() {
         return "BaseCoach Work Out: 30 minutes in Batting Cage";
@@ -8,6 +15,6 @@ public class BaseballCoach implements Coach {
 
     @Override
     public String getDailyFortune() {
-        return null;
+        return fortuneService.getFortune();
     }
 }
