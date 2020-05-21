@@ -19,4 +19,9 @@
           class="com.spring.core.containers.HappyFortuneService">
     </bean>
 
+    <bean id="cricketCoach"
+          class="com.spring.core.containers.CricketCoach">
+        <property name="fortuneService" ref="fortune"/>
+    </bean>
+
 </beans>
