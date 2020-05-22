@@ -13,6 +13,12 @@ public class Main {
 
         System.out.println(tennisCoach.getDailyWorkOut());
 
+        Coach soccerCoach = context.getBean("soccerCoach", SoccerCoach.class);
+
+        System.out.println(soccerCoach.getDailyWorkOut());
+
+        context.close();
+
     }
 
 }
