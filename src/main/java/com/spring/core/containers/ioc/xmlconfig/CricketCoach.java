@@ -1,4 +1,4 @@
-package com.spring.core.containers;
+package com.spring.core.containers.ioc.xmlconfig;
 
 public class CricketCoach implements Coach {
 

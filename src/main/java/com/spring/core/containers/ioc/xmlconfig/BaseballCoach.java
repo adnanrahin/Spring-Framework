@@ -1,16 +1,16 @@
-package com.spring.core.containers;
+package com.spring.core.containers.ioc.xmlconfig;
 
-public class TrackCoach implements Coach {
+public class BaseballCoach implements Coach {
 
     private FortuneService fortuneService;
 
-    public TrackCoach(FortuneService fortuneService) {
+    public BaseballCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
     @Override
     public String getDailyWorkout() {
-        return "20 minutes Running Everyday";
+        return "BaseCoach Work Out: 30 minutes in Batting Cage";
     }
 
     @Override
