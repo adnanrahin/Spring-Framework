@@ -7,21 +7,25 @@
           class="com.spring.core.containers.BaseballCoach">
 
         <!--Constructor Injection-->
-        <constructor-arg ref="fortune"/>
+        <constructor-arg ref="fortuneClass"/>
     </bean>
 
     <bean id="trackCoach"
           class="com.spring.core.containers.TrackCoach">
-        <constructor-arg ref="fortune"/>
+        <constructor-arg ref="fortuneClass"/>
     </bean>
 
-    <bean id="fortune"
+    <bean id="fortuneClass"
           class="com.spring.core.containers.HappyFortuneService">
     </bean>
 
     <bean id="cricketCoach"
           class="com.spring.core.containers.CricketCoach">
-        <property name="fortuneService" ref="fortune"/>
+
+        <!--Setter Injection-->
+        <property name="fortuneService" ref="fortuneClass"/>
+        <property name="cricketTeamName" value="sydney Sixers"/>
+        <property name="cricketEmail" value="sydneySixers@email.com"/>
     </bean>
 
 </beans>

@@ -4,8 +4,27 @@ public class CricketCoach implements Coach {
 
     private FortuneService fortuneService;
 
+    private String cricketTeamName;
+    private String cricketEmail;
+
     public FortuneService getFortuneService() {
         return fortuneService;
+    }
+
+    public String getCricketTeamName() {
+        return cricketTeamName;
+    }
+
+    public void setCricketTeamName(String cricketTeamName) {
+        this.cricketTeamName = cricketTeamName;
+    }
+
+    public String getCricketEmail() {
+        return cricketEmail;
+    }
+
+    public void setCricketEmail(String cricketEmail) {
+        this.cricketEmail = cricketEmail;
     }
 
     public void setFortuneService(FortuneService fortuneService) {

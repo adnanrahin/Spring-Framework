@@ -27,6 +27,10 @@ public class Main {
 
         System.out.println(cricketCoach.getDailyWorkout());
 
+        System.out.println(cricketCoach.getCricketTeamName());
+
+        System.out.println(cricketCoach.getCricketEmail());
+
         context.close();
 
     }
