@@ -17,6 +17,8 @@ public class Main {
 
         System.out.println(soccerCoach.getDailyWorkOut());
 
+        System.out.println(soccerCoach.getDailyFortune());
+
         context.close();
 
     }
