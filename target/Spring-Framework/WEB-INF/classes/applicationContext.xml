@@ -4,6 +4,28 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="baseballCoach"
-          class="com.spring.core.containers.BaseballCoach">
+          class="com.spring.core.containers.ioc.xmlconfig.BaseballCoach">
+
+        <!--Constructor Injection-->
+        <constructor-arg ref="fortuneClass"/>
     </bean>
+
+    <bean id="trackCoach"
+          class="com.spring.core.containers.ioc.xmlconfig.TrackCoach">
+        <constructor-arg ref="fortuneClass"/>
+    </bean>
+
+    <bean id="fortuneClass"
+          class="com.spring.core.containers.ioc.xmlconfig.HappyFortuneService">
+    </bean>
+
+    <bean id="cricketCoach"
+          class="com.spring.core.containers.ioc.xmlconfig.CricketCoach">
+
+        <!--Setter Injection-->
+        <property name="fortuneService" ref="fortuneClass"/>
+        <property name="cricketTeamName" value="Sydney Sixers"/>
+        <property name="cricketEmail" value="sydneySixers@email.com"/>
+    </bean>
+
 </beans>

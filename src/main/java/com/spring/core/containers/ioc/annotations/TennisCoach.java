@@ -9,9 +9,14 @@ public class TennisCoach implements Coach {
     private FortuneService fortuneService;
 
     @Autowired
-    public TennisCoach(FortuneService fortuneService) {
+    public void setFortuneService(FortuneService fortuneService) { // setter injection
         this.fortuneService = fortuneService;
     }
+
+    /*@Autowired
+    public TennisCoach(FortuneService fortuneService) { // constructor injection
+        this.fortuneService = fortuneService;
+    }*/
 
     @Override
     public String getDailyWorkOut() {
