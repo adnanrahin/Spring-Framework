@@ -16,6 +16,12 @@ public class Main {
 
         System.out.println(boxingCoach.getCoachFortune());
 
+
+        Coach tennisCoach = context.getBean("tennisCoach", TennisCoach.class);
+
+        System.out.println(tennisCoach.getCoachFortune());
+        System.out.println(tennisCoach.getDailyWorkOut());
+
     }
 
 }
