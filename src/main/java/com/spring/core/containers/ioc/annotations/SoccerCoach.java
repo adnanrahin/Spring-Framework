@@ -24,6 +24,7 @@ public class SoccerCoach implements Coach {
     @PreDestroy
     public void destroyMethod() {
         System.out.println("Soccer Coach is Destroyed.");
+
     }
 
     @Override
@@ -35,6 +36,5 @@ public class SoccerCoach implements Coach {
     public String getDailyFortune() {
         return fortuneService.getNewFortune();
     }
-
 
 }
