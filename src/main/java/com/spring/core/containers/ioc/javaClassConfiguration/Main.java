@@ -8,7 +8,7 @@ public class Main {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConfigurationClass.class);
 
-        Coach tennisCoach = context.getBean("tennisCoach", TennisCoach.class);
+        Coach tennisCoach = context.getBean("swimCoach", SwimCoach.class);
 
         System.out.println(tennisCoach.getDailyWorkOut());
 
