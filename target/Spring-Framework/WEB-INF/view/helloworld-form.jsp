@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<form action="processForm" method="GET">
+<form action="processFormVersionTwo" method="GET">
     <input type="text" name="studentName" placeholder="what is your name?"/>
     <input type="submit"/>
 </form>
