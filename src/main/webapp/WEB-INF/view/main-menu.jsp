@@ -12,11 +12,14 @@
 </head>
 <body>
 
-    <h2>Tomcat Server Started</h2>
+<h2>Tomcat Server Started</h2>
 
-    <hr>
+<hr>
 
-    <a href="${pageContext.request.contextPath}/showForm">Hello World Form</a>
+<a href="${pageContext.request.contextPath}/showForm">Hello World Form</a>
+
+<br><br>
+<a href="student/showForm">Student Form</a>
 
 </body>
 </html>
