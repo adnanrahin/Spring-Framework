@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="FORM" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -34,6 +35,10 @@
     C++ <form:radiobutton path="favoriteLanguage" value="C++"/>
     Python <form:radiobutton path="favoriteLanguage" value="Python"/>
     MySQL <form:radiobutton path="favoriteLanguage" value="MySQL"/>
+    <br><br>
+    Operating System:
+    Linux <form:checkbox path="operatingSystem" value="Linux"/>
+    Windows <form:checkbox path="operatingSystem" value="Windows"/>
     <br><br>
 
     <input type="submit" value="Submit">

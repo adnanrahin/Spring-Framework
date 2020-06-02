@@ -9,8 +9,8 @@ public class Student {
     private String lastName;
     private String country;
     private Map<String, String> countries;
-    public String favoriteLanguage;
-
+    private String favoriteLanguage;
+    public String[] operatingSystem;
 
     public Student() {
         countries = new HashMap<>();
@@ -59,5 +59,13 @@ public class Student {
 
     public void setFavoriteLanguage(String favoriteLanguage) {
         this.favoriteLanguage = favoriteLanguage;
+    }
+
+    public String[] getOperatingSystem() {
+        return operatingSystem;
+    }
+
+    public void setOperatingSystem(String[] operatingSystem) {
+        this.operatingSystem = operatingSystem;
     }
 }
