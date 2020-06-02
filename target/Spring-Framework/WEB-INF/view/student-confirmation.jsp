@@ -19,6 +19,7 @@
 First Name: ${student.firstName}
 <br><br>
 Last Name: ${student.lastName}
-
+<br><br>
+Country Name: ${student.country}
 </body>
 </html>
